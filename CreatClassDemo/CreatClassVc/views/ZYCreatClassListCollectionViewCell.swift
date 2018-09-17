@@ -1,0 +1,80 @@
+//
+//  ZYCreatClassListCollectionViewCell.swift
+//  CreatClassDemo
+//
+//  Created by bestsu on 2018/9/17.
+//  Copyright © 2018年 bestsu. All rights reserved.
+//
+
+import UIKit
+
+class ZYCreatClassListCollectionViewCell: UICollectionViewCell {
+    
+//    var isSelect: Bool?{
+//        didSet{
+//            if isSelect == true{
+//                self.layer.borderColor = UIColor.init(hex: 0x2BC17C).cgColor
+//                self.layer.borderWidth = ceilStandardPtf(3)
+//            }else{
+//                self.layer.borderColor = UIColor.init(hex: 0x2BC17C).cgColor
+//                self.layer.borderWidth = ceilStandardPtf(3)
+//            }
+//        }
+//    }
+    
+//    /// 是否要隐藏label
+//    var isHiddenLabel: Bool?{
+//        didSet{
+//            self.titleLabel.isHidden = isHiddenLabel ?? true
+//        }
+//    }
+    /// 年级名称
+    var className: String?{
+        didSet{
+            self.titleLabel.text = className ?? ""
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.clear
+        setUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setUI(){
+//        contentView.addSubview(iconImageView)
+        contentView.addSubview(titleLabel)
+        
+//        iconImageView.mas_makeConstraints { (make) in
+//            make?.edges.mas_equalTo()(self.contentView)
+//        }
+        titleLabel.mas_makeConstraints { (make) in
+            make?.edges.mas_equalTo()(self.contentView)
+        }
+        
+        
+    }
+    
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.layer.cornerRadius = ceilStandardPtf(12)
+        label.layer.masksToBounds = true
+        label.layer.borderColor = UIColor.init(hex: 0x2BC17C).cgColor
+        label.layer.borderWidth = ceilStandardPtf(3)
+        label.textAlignment = .center
+        label.textColor = UIColor.init(hex: 0x2BC17C)
+        label.font = UIFont.systemFont(ofSize: ceilStandardPtf(42))
+        return label
+    }()
+    
+//    private lazy var iconImageView: UIImageView = {
+//        let view = UIImageView()
+//        view.image = UIImage.init(named: "Rectangle19")
+//        return view
+//    }()
+    
+}

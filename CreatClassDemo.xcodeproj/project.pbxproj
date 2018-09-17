@@ -7,14 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3382A3E9BD860586C28646D7 /* Pods_CreatClassDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BBCCDF43CF08D6596025CF /* Pods_CreatClassDemo.framework */; };
+		4908F25A214B503C00F8B680 /* ZYClassManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908F259214B503C00F8B680 /* ZYClassManagerViewController.swift */; };
+		4908F25C214B5A5800F8B680 /* ZYBest_ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908F25B214B5A5800F8B680 /* ZYBest_ButtonView.swift */; };
+		4908F25E214B699B00F8B680 /* ZYStuentClassManagerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908F25D214B699B00F8B680 /* ZYStuentClassManagerTableViewCell.swift */; };
+		4908F260214B8A8500F8B680 /* ZYStudentNoneClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908F25F214B8A8500F8B680 /* ZYStudentNoneClassView.swift */; };
+		4908F262214B950A00F8B680 /* ZYStudentJoinClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908F261214B950A00F8B680 /* ZYStudentJoinClassViewController.swift */; };
+		4908F268214BAA2600F8B680 /* ZYTeacherManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908F267214BAA2600F8B680 /* ZYTeacherManagerViewController.swift */; };
+		4908F26A214BB37700F8B680 /* ZYTeacherManagerStudentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908F269214BB37700F8B680 /* ZYTeacherManagerStudentListTableViewCell.swift */; };
+		4908F26C214BB65900F8B680 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908F26B214BB65900F8B680 /* ViewController1.swift */; };
 		49125E982148BA3B00D26012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49125E972148BA3B00D26012 /* AppDelegate.swift */; };
 		49125E9A2148BA3B00D26012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49125E992148BA3B00D26012 /* ViewController.swift */; };
 		49125E9D2148BA3B00D26012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49125E9B2148BA3B00D26012 /* Main.storyboard */; };
 		49125E9F2148BA3C00D26012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49125E9E2148BA3C00D26012 /* Assets.xcassets */; };
 		49125EA22148BA3C00D26012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49125EA02148BA3C00D26012 /* LaunchScreen.storyboard */; };
+		49125EAB2148C10300D26012 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49125EAA2148C10300D26012 /* common.swift */; };
+		49125EAE2148E9DE00D26012 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49125EAC2148E9DE00D26012 /* UIColorExtension.swift */; };
+		49125EAF2148E9DE00D26012 /* KRTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49125EAD2148E9DE00D26012 /* KRTabBarViewController.swift */; };
+		49160B1A2148F11E005F698D /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49160B192148F11E005F698D /* DemoViewController.swift */; };
+		49160B1C2148F261005F698D /* ZYNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49160B1B2148F261005F698D /* ZYNavigationViewController.swift */; };
+		49160B202148FF16005F698D /* ZYNoneIdentityStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49160B1F2148FF16005F698D /* ZYNoneIdentityStudentView.swift */; };
+		49160B22214907C0005F698D /* ZYNoneIdentityTeacherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49160B21214907C0005F698D /* ZYNoneIdentityTeacherView.swift */; };
+		495EA3F2214A8620001FECFE /* ZYJoinClassFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EA3F1214A8620001FECFE /* ZYJoinClassFinishViewController.swift */; };
+		4977E6E4214CA7610091305E /* ZYTeacherInviteJoinClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977E6E3214CA7610091305E /* ZYTeacherInviteJoinClassViewController.swift */; };
+		4977E6E6214CB64D0091305E /* ZYBaseControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977E6E5214CB64D0091305E /* ZYBaseControl.swift */; };
+		4977E6E8214CB6980091305E /* ZYShareViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977E6E7214CB6980091305E /* ZYShareViewControl.swift */; };
+		4995BEC92148EFCD00D3C259 /* ZYNoneIdentifiCreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995BEC82148EFCD00D3C259 /* ZYNoneIdentifiCreatViewController.swift */; };
+		4995BECC2148F06100D3C259 /* ZYStatusBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995BECB2148F06100D3C259 /* ZYStatusBarViewController.swift */; };
+		49B3E8B4214A37C100B45A93 /* ZYEditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3E8B3214A37C100B45A93 /* ZYEditNameViewController.swift */; };
+		49B3E8B6214A492300B45A93 /* ZYChoseClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3E8B5214A492300B45A93 /* ZYChoseClassViewController.swift */; };
+		49B3E8B8214A49E600B45A93 /* ZYBarButtonItem+Exitention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3E8B7214A49E600B45A93 /* ZYBarButtonItem+Exitention.swift */; };
+		49B3E8BA214A595200B45A93 /* KRReadCollectionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3E8B9214A595200B45A93 /* KRReadCollectionControl.swift */; };
+		49B3E8BC214A5D3700B45A93 /* ZYChoseClassControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3E8BB214A5D3700B45A93 /* ZYChoseClassControl.swift */; };
+		49B3E8BE214A5E4700B45A93 /* ZYChoseClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3E8BD214A5E4700B45A93 /* ZYChoseClassCollectionViewCell.swift */; };
+		49E1718F214F3CF20030BC49 /* ZYbanjiclassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1718E214F3CF20030BC49 /* ZYbanjiclassViewController.swift */; };
+		49E17194214F3DD60030BC49 /* ZYCreatClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E17191214F3DD60030BC49 /* ZYCreatClassViewController.swift */; };
+		49E17195214F3DD60030BC49 /* ZYCreatClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E17192214F3DD60030BC49 /* ZYCreatClassTableViewCell.swift */; };
+		49E17196214F3DD60030BC49 /* ZYTeacherCreatClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E17193214F3DD60030BC49 /* ZYTeacherCreatClassView.swift */; };
+		49E1719A214F488D0030BC49 /* ZYClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E17199214F488D0030BC49 /* ZYClassListView.swift */; };
+		49E1719C214F568B0030BC49 /* ZYCreatClassListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1719B214F568B0030BC49 /* ZYCreatClassListCollectionViewCell.swift */; };
+		49E1719E214F5EEE0030BC49 /* ZYDisplayClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1719D214F5EEE0030BC49 /* ZYDisplayClassCollectionViewCell.swift */; };
+		49E171A3214F97270030BC49 /* ZYClassListViewBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E171A2214F97270030BC49 /* ZYClassListViewBgView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4908F259214B503C00F8B680 /* ZYClassManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYClassManagerViewController.swift; sourceTree = "<group>"; };
+		4908F25B214B5A5800F8B680 /* ZYBest_ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYBest_ButtonView.swift; sourceTree = "<group>"; };
+		4908F25D214B699B00F8B680 /* ZYStuentClassManagerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYStuentClassManagerTableViewCell.swift; sourceTree = "<group>"; };
+		4908F25F214B8A8500F8B680 /* ZYStudentNoneClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYStudentNoneClassView.swift; sourceTree = "<group>"; };
+		4908F261214B950A00F8B680 /* ZYStudentJoinClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYStudentJoinClassViewController.swift; sourceTree = "<group>"; };
+		4908F267214BAA2600F8B680 /* ZYTeacherManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTeacherManagerViewController.swift; sourceTree = "<group>"; };
+		4908F269214BB37700F8B680 /* ZYTeacherManagerStudentListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTeacherManagerStudentListTableViewCell.swift; sourceTree = "<group>"; };
+		4908F26B214BB65900F8B680 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		49125E942148BA3B00D26012 /* CreatClassDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreatClassDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49125E972148BA3B00D26012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49125E992148BA3B00D26012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +66,36 @@
 		49125E9E2148BA3C00D26012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49125EA12148BA3C00D26012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49125EA32148BA3C00D26012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49125EAA2148C10300D26012 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		49125EAC2148E9DE00D26012 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		49125EAD2148E9DE00D26012 /* KRTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRTabBarViewController.swift; sourceTree = "<group>"; };
+		49160B192148F11E005F698D /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		49160B1B2148F261005F698D /* ZYNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYNavigationViewController.swift; sourceTree = "<group>"; };
+		49160B1F2148FF16005F698D /* ZYNoneIdentityStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYNoneIdentityStudentView.swift; sourceTree = "<group>"; };
+		49160B21214907C0005F698D /* ZYNoneIdentityTeacherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYNoneIdentityTeacherView.swift; sourceTree = "<group>"; };
+		495EA3F1214A8620001FECFE /* ZYJoinClassFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYJoinClassFinishViewController.swift; sourceTree = "<group>"; };
+		4977E6E3214CA7610091305E /* ZYTeacherInviteJoinClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTeacherInviteJoinClassViewController.swift; sourceTree = "<group>"; };
+		4977E6E5214CB64D0091305E /* ZYBaseControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYBaseControl.swift; sourceTree = "<group>"; };
+		4977E6E7214CB6980091305E /* ZYShareViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYShareViewControl.swift; sourceTree = "<group>"; };
+		4995BEC82148EFCD00D3C259 /* ZYNoneIdentifiCreatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYNoneIdentifiCreatViewController.swift; sourceTree = "<group>"; };
+		4995BECB2148F06100D3C259 /* ZYStatusBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYStatusBarViewController.swift; sourceTree = "<group>"; };
+		49B3E8B3214A37C100B45A93 /* ZYEditNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYEditNameViewController.swift; sourceTree = "<group>"; };
+		49B3E8B5214A492300B45A93 /* ZYChoseClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYChoseClassViewController.swift; sourceTree = "<group>"; };
+		49B3E8B7214A49E600B45A93 /* ZYBarButtonItem+Exitention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZYBarButtonItem+Exitention.swift"; sourceTree = "<group>"; };
+		49B3E8B9214A595200B45A93 /* KRReadCollectionControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRReadCollectionControl.swift; sourceTree = "<group>"; };
+		49B3E8BB214A5D3700B45A93 /* ZYChoseClassControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYChoseClassControl.swift; sourceTree = "<group>"; };
+		49B3E8BD214A5E4700B45A93 /* ZYChoseClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYChoseClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		49E1718E214F3CF20030BC49 /* ZYbanjiclassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYbanjiclassViewController.swift; sourceTree = "<group>"; };
+		49E17191214F3DD60030BC49 /* ZYCreatClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCreatClassViewController.swift; sourceTree = "<group>"; };
+		49E17192214F3DD60030BC49 /* ZYCreatClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCreatClassTableViewCell.swift; sourceTree = "<group>"; };
+		49E17193214F3DD60030BC49 /* ZYTeacherCreatClassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYTeacherCreatClassView.swift; sourceTree = "<group>"; };
+		49E17199214F488D0030BC49 /* ZYClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYClassListView.swift; sourceTree = "<group>"; };
+		49E1719B214F568B0030BC49 /* ZYCreatClassListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYCreatClassListCollectionViewCell.swift; sourceTree = "<group>"; };
+		49E1719D214F5EEE0030BC49 /* ZYDisplayClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYDisplayClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		49E171A2214F97270030BC49 /* ZYClassListViewBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYClassListViewBgView.swift; sourceTree = "<group>"; };
+		A3BBCCDF43CF08D6596025CF /* Pods_CreatClassDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreatClassDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF848972424A3161BCEC728D /* Pods-CreatClassDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreatClassDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreatClassDemo/Pods-CreatClassDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FE2478E1E903F494A1BE59AC /* Pods-CreatClassDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreatClassDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreatClassDemo/Pods-CreatClassDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +103,93 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3382A3E9BD860586C28646D7 /* Pods_CreatClassDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		083A61A2A04D0285083BD861 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF848972424A3161BCEC728D /* Pods-CreatClassDemo.debug.xcconfig */,
+				FE2478E1E903F494A1BE59AC /* Pods-CreatClassDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4908F256214B500C00F8B680 /* ClassManageVc */ = {
+			isa = PBXGroup;
+			children = (
+				4908F257214B502300F8B680 /* controllers */,
+				4908F258214B502A00F8B680 /* views */,
+			);
+			path = ClassManageVc;
+			sourceTree = "<group>";
+		};
+		4908F257214B502300F8B680 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4908F263214BA94700F8B680 /* studentVc */,
+				4908F264214BA96600F8B680 /* teachervc */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		4908F258214B502A00F8B680 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4977E6E5214CB64D0091305E /* ZYBaseControl.swift */,
+				4908F265214BA98E00F8B680 /* studentViews */,
+				4908F266214BA99900F8B680 /* teacherViews */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		4908F263214BA94700F8B680 /* studentVc */ = {
+			isa = PBXGroup;
+			children = (
+				4908F259214B503C00F8B680 /* ZYClassManagerViewController.swift */,
+				4908F261214B950A00F8B680 /* ZYStudentJoinClassViewController.swift */,
+			);
+			path = studentVc;
+			sourceTree = "<group>";
+		};
+		4908F264214BA96600F8B680 /* teachervc */ = {
+			isa = PBXGroup;
+			children = (
+				4908F267214BAA2600F8B680 /* ZYTeacherManagerViewController.swift */,
+				4977E6E3214CA7610091305E /* ZYTeacherInviteJoinClassViewController.swift */,
+			);
+			path = teachervc;
+			sourceTree = "<group>";
+		};
+		4908F265214BA98E00F8B680 /* studentViews */ = {
+			isa = PBXGroup;
+			children = (
+				4908F25D214B699B00F8B680 /* ZYStuentClassManagerTableViewCell.swift */,
+				4908F25F214B8A8500F8B680 /* ZYStudentNoneClassView.swift */,
+			);
+			path = studentViews;
+			sourceTree = "<group>";
+		};
+		4908F266214BA99900F8B680 /* teacherViews */ = {
+			isa = PBXGroup;
+			children = (
+				4908F269214BB37700F8B680 /* ZYTeacherManagerStudentListTableViewCell.swift */,
+				4977E6E7214CB6980091305E /* ZYShareViewControl.swift */,
+			);
+			path = teacherViews;
+			sourceTree = "<group>";
+		};
 		49125E8B2148BA3B00D26012 = {
 			isa = PBXGroup;
 			children = (
 				49125E962148BA3B00D26012 /* CreatClassDemo */,
 				49125E952148BA3B00D26012 /* Products */,
+				083A61A2A04D0285083BD861 /* Pods */,
+				80CD1220652FA0EAF176344D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +204,105 @@
 		49125E962148BA3B00D26012 /* CreatClassDemo */ = {
 			isa = PBXGroup;
 			children = (
-				49125E972148BA3B00D26012 /* AppDelegate.swift */,
-				49125E992148BA3B00D26012 /* ViewController.swift */,
-				49125E9B2148BA3B00D26012 /* Main.storyboard */,
-				49125E9E2148BA3C00D26012 /* Assets.xcassets */,
-				49125EA02148BA3C00D26012 /* LaunchScreen.storyboard */,
-				49125EA32148BA3C00D26012 /* Info.plist */,
+				49125EAD2148E9DE00D26012 /* KRTabBarViewController.swift */,
+				4995BECA2148EFE700D3C259 /* NoneIdentifiVC */,
+				4908F256214B500C00F8B680 /* ClassManageVc */,
+				49E17190214F3DB50030BC49 /* CreatClassVc */,
+				49125EA92148BF3A00D26012 /* Exention */,
+				49125EB02148EC0200D26012 /* other */,
 			);
 			path = CreatClassDemo;
+			sourceTree = "<group>";
+		};
+		49125EA92148BF3A00D26012 /* Exention */ = {
+			isa = PBXGroup;
+			children = (
+				49125EAA2148C10300D26012 /* common.swift */,
+				49B3E8B7214A49E600B45A93 /* ZYBarButtonItem+Exitention.swift */,
+				4995BECB2148F06100D3C259 /* ZYStatusBarViewController.swift */,
+				4908F25B214B5A5800F8B680 /* ZYBest_ButtonView.swift */,
+			);
+			path = Exention;
+			sourceTree = "<group>";
+		};
+		49125EB02148EC0200D26012 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				49125E9E2148BA3C00D26012 /* Assets.xcassets */,
+				49B3E8B9214A595200B45A93 /* KRReadCollectionControl.swift */,
+				49125EA02148BA3C00D26012 /* LaunchScreen.storyboard */,
+				49125E9B2148BA3B00D26012 /* Main.storyboard */,
+				49125EA32148BA3C00D26012 /* Info.plist */,
+				49125EAC2148E9DE00D26012 /* UIColorExtension.swift */,
+				49160B1B2148F261005F698D /* ZYNavigationViewController.swift */,
+				49125E992148BA3B00D26012 /* ViewController.swift */,
+				4908F26B214BB65900F8B680 /* ViewController1.swift */,
+				49125E972148BA3B00D26012 /* AppDelegate.swift */,
+				49E1718E214F3CF20030BC49 /* ZYbanjiclassViewController.swift */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		49160B1E2148FEB1005F698D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				49160B1F2148FF16005F698D /* ZYNoneIdentityStudentView.swift */,
+				49160B21214907C0005F698D /* ZYNoneIdentityTeacherView.swift */,
+				49B3E8BB214A5D3700B45A93 /* ZYChoseClassControl.swift */,
+				49B3E8BD214A5E4700B45A93 /* ZYChoseClassCollectionViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		4995BECA2148EFE700D3C259 /* NoneIdentifiVC */ = {
+			isa = PBXGroup;
+			children = (
+				49160B192148F11E005F698D /* DemoViewController.swift */,
+				4995BEC82148EFCD00D3C259 /* ZYNoneIdentifiCreatViewController.swift */,
+				49B3E8B3214A37C100B45A93 /* ZYEditNameViewController.swift */,
+				49B3E8B5214A492300B45A93 /* ZYChoseClassViewController.swift */,
+				495EA3F1214A8620001FECFE /* ZYJoinClassFinishViewController.swift */,
+				49160B1E2148FEB1005F698D /* views */,
+			);
+			path = NoneIdentifiVC;
+			sourceTree = "<group>";
+		};
+		49E17190214F3DB50030BC49 /* CreatClassVc */ = {
+			isa = PBXGroup;
+			children = (
+				49E17197214F3DDC0030BC49 /* Controllers */,
+				49E17198214F3DEB0030BC49 /* views */,
+			);
+			path = CreatClassVc;
+			sourceTree = "<group>";
+		};
+		49E17197214F3DDC0030BC49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49E17191214F3DD60030BC49 /* ZYCreatClassViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49E17198214F3DEB0030BC49 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				49E17193214F3DD60030BC49 /* ZYTeacherCreatClassView.swift */,
+				49E17192214F3DD60030BC49 /* ZYCreatClassTableViewCell.swift */,
+				49E1719D214F5EEE0030BC49 /* ZYDisplayClassCollectionViewCell.swift */,
+				49E17199214F488D0030BC49 /* ZYClassListView.swift */,
+				49E1719B214F568B0030BC49 /* ZYCreatClassListCollectionViewCell.swift */,
+				49E171A2214F97270030BC49 /* ZYClassListViewBgView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		80CD1220652FA0EAF176344D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3BBCCDF43CF08D6596025CF /* Pods_CreatClassDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49125EA62148BA3C00D26012 /* Build configuration list for PBXNativeTarget "CreatClassDemo" */;
 			buildPhases = (
+				5A5095F9BB9EB1F7A0611F39 /* [CP] Check Pods Manifest.lock */,
 				49125E902148BA3B00D26012 /* Sources */,
 				49125E912148BA3B00D26012 /* Frameworks */,
 				49125E922148BA3B00D26012 /* Resources */,
+				A37975C754337E5EF6FFAB47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,6 +333,7 @@
 		49125E8C2148BA3B00D26012 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZY;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = bestsu;
@@ -130,13 +374,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A5095F9BB9EB1F7A0611F39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CreatClassDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A37975C754337E5EF6FFAB47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CreatClassDemo/Pods-CreatClassDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CreatClassDemo/Pods-CreatClassDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49125E902148BA3B00D26012 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4908F268214BAA2600F8B680 /* ZYTeacherManagerViewController.swift in Sources */,
+				49B3E8BC214A5D3700B45A93 /* ZYChoseClassControl.swift in Sources */,
+				4908F25C214B5A5800F8B680 /* ZYBest_ButtonView.swift in Sources */,
+				49B3E8B6214A492300B45A93 /* ZYChoseClassViewController.swift in Sources */,
+				49E17196214F3DD60030BC49 /* ZYTeacherCreatClassView.swift in Sources */,
+				4977E6E8214CB6980091305E /* ZYShareViewControl.swift in Sources */,
 				49125E9A2148BA3B00D26012 /* ViewController.swift in Sources */,
+				4908F262214B950A00F8B680 /* ZYStudentJoinClassViewController.swift in Sources */,
+				49160B202148FF16005F698D /* ZYNoneIdentityStudentView.swift in Sources */,
+				4908F26A214BB37700F8B680 /* ZYTeacherManagerStudentListTableViewCell.swift in Sources */,
+				49B3E8B4214A37C100B45A93 /* ZYEditNameViewController.swift in Sources */,
+				4908F25A214B503C00F8B680 /* ZYClassManagerViewController.swift in Sources */,
 				49125E982148BA3B00D26012 /* AppDelegate.swift in Sources */,
+				49160B1C2148F261005F698D /* ZYNavigationViewController.swift in Sources */,
+				49125EAB2148C10300D26012 /* common.swift in Sources */,
+				49E1719C214F568B0030BC49 /* ZYCreatClassListCollectionViewCell.swift in Sources */,
+				4977E6E4214CA7610091305E /* ZYTeacherInviteJoinClassViewController.swift in Sources */,
+				49B3E8BA214A595200B45A93 /* KRReadCollectionControl.swift in Sources */,
+				4908F26C214BB65900F8B680 /* ViewController1.swift in Sources */,
+				495EA3F2214A8620001FECFE /* ZYJoinClassFinishViewController.swift in Sources */,
+				4995BEC92148EFCD00D3C259 /* ZYNoneIdentifiCreatViewController.swift in Sources */,
+				49E171A3214F97270030BC49 /* ZYClassListViewBgView.swift in Sources */,
+				49E17194214F3DD60030BC49 /* ZYCreatClassViewController.swift in Sources */,
+				49B3E8BE214A5E4700B45A93 /* ZYChoseClassCollectionViewCell.swift in Sources */,
+				49E17195214F3DD60030BC49 /* ZYCreatClassTableViewCell.swift in Sources */,
+				49125EAE2148E9DE00D26012 /* UIColorExtension.swift in Sources */,
+				49E1719A214F488D0030BC49 /* ZYClassListView.swift in Sources */,
+				4995BECC2148F06100D3C259 /* ZYStatusBarViewController.swift in Sources */,
+				4908F260214B8A8500F8B680 /* ZYStudentNoneClassView.swift in Sources */,
+				49B3E8B8214A49E600B45A93 /* ZYBarButtonItem+Exitention.swift in Sources */,
+				4908F25E214B699B00F8B680 /* ZYStuentClassManagerTableViewCell.swift in Sources */,
+				49125EAF2148E9DE00D26012 /* KRTabBarViewController.swift in Sources */,
+				4977E6E6214CB64D0091305E /* ZYBaseControl.swift in Sources */,
+				49160B1A2148F11E005F698D /* DemoViewController.swift in Sources */,
+				49E1718F214F3CF20030BC49 /* ZYbanjiclassViewController.swift in Sources */,
+				49160B22214907C0005F698D /* ZYNoneIdentityTeacherView.swift in Sources */,
+				49E1719E214F5EEE0030BC49 /* ZYDisplayClassCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,34 +596,40 @@
 		};
 		49125EA72148BA3C00D26012 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF848972424A3161BCEC728D /* Pods-CreatClassDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CreatClassDemo/Info.plist;
+				DEVELOPMENT_TEAM = Y9EA8DHFC5;
+				INFOPLIST_FILE = CreatClassDemo/other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bestsu.CreatClassDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		49125EA82148BA3C00D26012 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2478E1E903F494A1BE59AC /* Pods-CreatClassDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CreatClassDemo/Info.plist;
+				DEVELOPMENT_TEAM = Y9EA8DHFC5;
+				INFOPLIST_FILE = CreatClassDemo/other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bestsu.CreatClassDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
