@@ -20,12 +20,9 @@ class ZYCreatClassViewController: UIViewController {
     private func setUI(){
         self.view.addSubview(classView)
        
-        
         classView.mas_makeConstraints { (make) in
             make?.edges.mas_equalTo()(view)
         }
-    
-        
     }
  
     private lazy var classView: ZYTeacherCreatClassView = {
@@ -33,9 +30,7 @@ class ZYCreatClassViewController: UIViewController {
         return view
     }()
     
-
-    
-    
+ 
 }
 
 

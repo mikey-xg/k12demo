@@ -43,7 +43,6 @@ class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegat
     private func setUI(){
         self.addSubview(classListView)
         self.addSubview(tableview)
-//        self.addSubview(collectionView)
         self.insertSubview(collectionView, belowSubview: classListView)
         
         classListView.mas_makeConstraints { (make) in
@@ -61,8 +60,24 @@ class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegat
             make?.top.right().bottom().mas_equalTo()(self)
             make?.left.mas_equalTo()(tableview.mas_right)
         }
+        
+        classListView.listViewSelectCellCallBack = {[weak self] (index) in
+            let structList = self?.choseClassArr[index]
+            guard let grade = structList?.grade else { return }
+            guard let num = structList?.classNumber else { return }
+//            self?.currentClassArr[num-1] = false
+            var arr = self?.getClass(index: (grade-1))
+            arr?[num-1] = false
+            self?.coverClassListArr(index: grade, arr: arr ?? [Bool]())
+            self?.choseClassArr.remove(at: index)
+            self?.collectionView.reloadData()
+            self?.classListViewClassNameArr.remove(at: index)
+            self?.classListView.choseClassName = self?.classListViewClassNameArr
+        }
     }
+    
 
+    
     //  MARK: - tableView的代理方法和数据源方法
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return classNameArr.count
@@ -259,6 +274,38 @@ class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegat
             break
         }
         return ""
+    }
+    
+    //  MARK: - 重新覆盖数组
+    private func coverClassListArr(index: Int, arr:[Bool]){
+        switch index {
+        case 1:
+            class1Array = arr
+        case 2:
+            class2Array = arr
+        case 3:
+            class3Array = arr
+        case 4:
+            class4Array = arr
+        case 5:
+            class5Array = arr
+        case 6:
+            class6Array = arr
+        case 7:
+            class7Array = arr
+        case 8:
+            class8Array = arr
+        case 9:
+            class9Array = arr
+        case 10:
+            class10Array = arr
+        case 11:
+            class11Array = arr
+        case 12:
+            class12Array = arr
+        default:
+            break
+        }
     }
     
     //    MARK: 控件

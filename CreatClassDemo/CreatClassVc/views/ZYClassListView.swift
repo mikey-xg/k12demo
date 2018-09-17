@@ -11,6 +11,10 @@ import UIKit
 class ZYClassListView: UIView, UICollectionViewDataSource, UICollectionViewDelegate{
 
     var finishCreatBtnViewCallBack:(()->())?
+//    /// 外部传入，内部删除使用
+//    var listArr: [ChoseClassStruct]?
+    
+    var listViewSelectCellCallBack: ((Int)->())?
     
     var choseClassName: [String]?{
         didSet{
@@ -18,6 +22,11 @@ class ZYClassListView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
             let remainNum: Int = 5 - currentNum
             self.changeLabelColor(choseNum: currentNum, classNumbs: "(您还可创建\(remainNum)个班级)")
             self.collectionView.reloadData()
+            if (choseClassName?.count ?? 0) > 0{
+                self.finishCreatBtnView.isSelected = true
+            }else{
+                self.finishCreatBtnView.isSelected = false
+            }
         }
     }
 
@@ -89,7 +98,7 @@ class ZYClassListView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("点击了\(indexPath.row)个cell")
+        listViewSelectCellCallBack?(indexPath.row)
     }
     
     /// 完成创建按钮点击
