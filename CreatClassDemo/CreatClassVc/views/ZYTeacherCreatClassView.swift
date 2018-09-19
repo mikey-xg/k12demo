@@ -12,11 +12,12 @@ import UIKit
 struct ChoseClassStruct {
     var grade:Int = 0
     var classNumber: Int = 0
+    var status: Int = 0 // 0 代表没点击  1代表选中的 2代表外部传入的
 }
 
 class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate{
 
-    
+    var tempStruct: [ChoseClassStruct] = [ChoseClassStruct.init(grade: 1, classNumber: 1, status: 2), ChoseClassStruct.init(grade: 1, classNumber: 2, status: 2)]
     //    MARK: 12个班级的Array,死数据，不要动
     var class1Array: [Bool] = [Bool].init(repeating: false, count: 20)
     var class2Array: [Bool] = [Bool].init(repeating: false, count: 20)
@@ -34,6 +35,14 @@ class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegat
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUI()
+        self.dealTempData()
+    }
+    
+    private func dealTempData(){
+        self.classListView.exitClassNum = self.tempStruct.count
+        for value in self.tempStruct{
+            self.addClass(grade: value.grade, index: value.classNumber, status: value.status)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -72,7 +81,7 @@ class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegat
             self?.choseClassArr.remove(at: index)
             self?.collectionView.reloadData()
             self?.classListViewClassNameArr.remove(at: index)
-            self?.classListView.choseClassName = self?.classListViewClassNameArr
+            self?.classListView.listArr = self?.choseClassArr//self?.classListViewClassNameArr
         }
     }
     
@@ -150,7 +159,7 @@ class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegat
     
     /// 通过结构体数组中的元素 拿到班级字符串
     var classListViewClassNameArr: [String] = [String]()
-    private func getAddClassStringWithCloseClassArr() -> [String]{
+    private func getAddClassStringWithChoseClassArr() -> [String]{
         let gradeArr: String = getStrWithGrade(grade: choseClassArr[0].grade)
         let classNum: String = "\(choseClassArr[0].classNumber)班"
         let className: String = "\(gradeArr)" + "\(classNum)"
@@ -160,9 +169,9 @@ class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegat
     
     /// 新增加班级
     var choseClassArr: [ChoseClassStruct] = [ChoseClassStruct]()
-    private func addClass(grade: Int, index: Int){
-        choseClassArr.insert(ChoseClassStruct.init(grade: grade, classNumber: index), at: 0)
-        classListView.choseClassName = getAddClassStringWithCloseClassArr()
+    private func addClass(grade: Int, index: Int, status: Int? = 1){
+        choseClassArr.insert(ChoseClassStruct.init(grade: grade, classNumber: index, status: status!), at: 0)
+        classListView.listArr = self.choseClassArr//getAddClassStringWithChoseClassArr()
     }
     /// 删除增加的班级
     private func minusClass(grade: Int, index: Int){
@@ -170,11 +179,13 @@ class ZYTeacherCreatClassView: UIView, UITableViewDataSource, UITableViewDelegat
             if value.grade == grade{
                 if value.classNumber == index{
                     choseClassArr.remove(at: i)
-                    classListViewClassNameArr.remove(at: i)
+//                    classListViewClassNameArr.remove(at: i)
+                    self.classListView.listArr = choseClassArr
+                    break
                 }
             }
         }
-        classListView.choseClassName = classListViewClassNameArr
+        classListView.listArr = self.choseClassArr//classListViewClassNameArr
     }
     
     //  MARK: - 获取班级的选中状态

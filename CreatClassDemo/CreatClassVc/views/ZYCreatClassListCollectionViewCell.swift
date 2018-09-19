@@ -10,17 +10,18 @@ import UIKit
 
 class ZYCreatClassListCollectionViewCell: UICollectionViewCell {
     
-//    var isSelect: Bool?{
-//        didSet{
-//            if isSelect == true{
-//                self.layer.borderColor = UIColor.init(hex: 0x2BC17C).cgColor
-//                self.layer.borderWidth = ceilStandardPtf(3)
-//            }else{
-//                self.layer.borderColor = UIColor.init(hex: 0x2BC17C).cgColor
-//                self.layer.borderWidth = ceilStandardPtf(3)
-//            }
-//        }
-//    }
+    var isSelect: Bool?{
+        didSet{
+            if isSelect == true{
+                self.titleLabel.layer.borderColor = UIColor.init(hex: 0x2BC17C).cgColor
+                self.titleLabel.textColor = UIColor.init(hex: 0x2BC17C)
+                
+            }else{
+                self.titleLabel.layer.borderColor = UIColor.init(hex: 0x222222, alpha: 0.15).cgColor
+                self.titleLabel.textColor = UIColor.init(hex: 0x222222, alpha: 0.15)
+            }
+        }
+    }
     
 //    /// 是否要隐藏label
 //    var isHiddenLabel: Bool?{
@@ -37,7 +38,7 @@ class ZYCreatClassListCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.clear
+//        self.backgroundColor = UIColor.clear
         setUI()
     }
     
@@ -58,6 +59,7 @@ class ZYCreatClassListCollectionViewCell: UICollectionViewCell {
         
         
     }
+    
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()

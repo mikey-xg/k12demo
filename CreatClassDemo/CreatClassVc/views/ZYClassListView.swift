@@ -11,25 +11,86 @@ import UIKit
 class ZYClassListView: UIView, UICollectionViewDataSource, UICollectionViewDelegate{
 
     var finishCreatBtnViewCallBack:(()->())?
-//    /// 外部传入，内部删除使用
-//    var listArr: [ChoseClassStruct]?
-    
+
+    var exitClassNum: Int = 0
     var listViewSelectCellCallBack: ((Int)->())?
     
-    var choseClassName: [String]?{
+//    var choseClassName: [String]?{
+//        didSet{
+//            let currentNum = (choseClassName?.count ?? 0) - exitClassNum
+//            let remainNum: Int = 5 - currentNum - exitClassNum
+//            self.changeLabelColor(choseNum: currentNum, classNumbs: "(您还可创建\(remainNum)个班级)")
+//            self.collectionView.reloadData()
+//            if (choseClassName?.count ?? 0) > 0{
+//                self.finishCreatBtnView.isSelected = true
+//            }else{
+//                self.finishCreatBtnView.isSelected = false
+//            }
+//        }
+//    }
+    //    /// 外部传入，内部删除使用
+    var listArr: [ChoseClassStruct]?{
         didSet{
-            let currentNum = choseClassName?.count ?? 0
-            let remainNum: Int = 5 - currentNum
-            self.changeLabelColor(choseNum: currentNum, classNumbs: "(您还可创建\(remainNum)个班级)")
-            self.collectionView.reloadData()
-            if (choseClassName?.count ?? 0) > 0{
-                self.finishCreatBtnView.isSelected = true
-            }else{
-                self.finishCreatBtnView.isSelected = false
+            self.classListViewClassNameArr.removeAll()
+            for value in listArr!{
+                getAddClassStringWithChoseClassArr(choseClass: value)
+//                self.collectionView.reloadData()
             }
         }
     }
-
+    /// 通过结构体数组中的元素 拿到班级字符串
+    var classListViewClassNameArr: [String] = [String]()
+    private func getAddClassStringWithChoseClassArr(choseClass: ChoseClassStruct){
+        let gradeArr: String = getStrWithGrade(grade: choseClass.grade)
+        let classNum: String = "\(choseClass.classNumber)班"
+        let className: String = "\(gradeArr)" + "\(classNum)"
+        classListViewClassNameArr.append(className)
+        
+        let currentNum = (classListViewClassNameArr.count) - exitClassNum
+        let remainNum: Int = 5 - currentNum - exitClassNum
+        self.changeLabelColor(choseNum: currentNum, classNumbs: "(您还可创建\(remainNum)个班级)")
+        self.collectionView.reloadData()
+        if (classListViewClassNameArr.count - exitClassNum) > 0{
+            self.finishCreatBtnView.isSelected = true
+        }else{
+            self.finishCreatBtnView.isSelected = false
+        }
+    }
+    
+    /// 根据年级数字  拿到 年级字符串
+    private func getStrWithGrade(grade: Int) -> String{
+        switch grade {
+        case 1:
+            return "一年级"
+        case 2:
+            return "二年级"
+        case 3:
+            return "三年级"
+        case 4:
+            return "四年级"
+        case 5:
+            return "五年级"
+        case 6:
+            return "六年级"
+        case 7:
+            return "七年级"
+        case 8:
+            return "八年级"
+        case 9:
+            return "九年级"
+        case 10:
+            return "十年级"
+        case 11:
+            return "十一年级"
+        case 12:
+            return "十二年级"
+        default:
+            break
+        }
+        return ""
+    }
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.white
@@ -88,12 +149,17 @@ class ZYClassListView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
 
     //  MARK:  collectionview的代理方法和数据源方法
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return choseClassName?.count ?? 0
+        return classListViewClassNameArr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! ZYCreatClassListCollectionViewCell
-        cell.className = choseClassName?[indexPath.row]
+        cell.className = classListViewClassNameArr[indexPath.row]
+        if listArr?[indexPath.row].status == 2{
+            cell.isSelect = false
+        }else{
+            cell.isSelect = true
+        }
         return cell
     }
     
