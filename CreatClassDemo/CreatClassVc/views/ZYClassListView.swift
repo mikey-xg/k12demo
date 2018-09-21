@@ -15,26 +15,12 @@ class ZYClassListView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     var exitClassNum: Int = 0
     var listViewSelectCellCallBack: ((Int)->())?
     
-//    var choseClassName: [String]?{
-//        didSet{
-//            let currentNum = (choseClassName?.count ?? 0) - exitClassNum
-//            let remainNum: Int = 5 - currentNum - exitClassNum
-//            self.changeLabelColor(choseNum: currentNum, classNumbs: "(您还可创建\(remainNum)个班级)")
-//            self.collectionView.reloadData()
-//            if (choseClassName?.count ?? 0) > 0{
-//                self.finishCreatBtnView.isSelected = true
-//            }else{
-//                self.finishCreatBtnView.isSelected = false
-//            }
-//        }
-//    }
     //    /// 外部传入，内部删除使用
     var listArr: [ChoseClassStruct]?{
         didSet{
             self.classListViewClassNameArr.removeAll()
             for value in listArr!{
                 getAddClassStringWithChoseClassArr(choseClass: value)
-//                self.collectionView.reloadData()
             }
         }
     }

@@ -47,22 +47,30 @@ class ZYCreatClassListCollectionViewCell: UICollectionViewCell {
     }
     
     private func setUI(){
-//        contentView.addSubview(iconImageView)
+//        contentView.addSubview(bgView)
         contentView.addSubview(titleLabel)
         
-//        iconImageView.mas_makeConstraints { (make) in
+//        bgView.mas_makeConstraints { (make) in
 //            make?.edges.mas_equalTo()(self.contentView)
 //        }
         titleLabel.mas_makeConstraints { (make) in
-            make?.edges.mas_equalTo()(self.contentView)
+            make?.edges.mas_equalTo()(contentView)
         }
         
         
     }
     
+    private lazy var bgView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.white
+        view.layer.cornerRadius = ceilStandardPtf(12)
+        view.layer.masksToBounds = true
+        return view
+    }()
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.backgroundColor = UIColor.white
         label.layer.cornerRadius = ceilStandardPtf(12)
         label.layer.masksToBounds = true
         label.layer.borderColor = UIColor.init(hex: 0x2BC17C).cgColor
